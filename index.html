@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("./node_modules/bulma/css/bulma.css");
+    </style>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+      integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <nav class="navbar">
+          <div class="navbar-brand">
+            <a href="#" class="navbar-item">
+              <img src="./ressources/pav.png" alt="logo" class="image" />
+            </a>
+            <div
+              class="navbar-burger burger"
+              id="btnNav"
+              data-target="menuContent"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div id="menuContent" class="navbar-menu">
+            <div class="navbar-end">
+              <a href="#" class="navbar-item"> Accueil </a>
+              <a href="#" class="navbar-item"> Recherche </a>
+              <a href="#" class="navbar-item"> Contact </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Titre et Recherche -->
+    <div class="container">
+      <div class="columns is-centered is-multiline">
+        <div class="column is-three-quarters">
+          <!--Titre  -->
+          <h2 class="title is-3 has-text-centered">
+            Liste des appartements disponibles a paris
+          </h2>
+        </div>
+        <!-- input et  bouton -->
+        <div class="column is-12 is-centered">
+          <div class="columns is-mobile is-centered">
+            <div class="column is-narrow is-7-mobile">
+              <div class="field">
+                <div class="control has-icons-left has-icons-right">
+                  <input type="text" placeholder="Recherche" class="input" />
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-search"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fas fa-check"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-narrow">
+              <div class="button has-background-danger has-text-light">
+                Recherche
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Txt en dessous de l'input -->
+        <div class="column is-12">
+          <p class="has-text-centered">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
+            praesentium quam eius nihil optio quae?
+          </p>
+        </div>
+      </div>
+      <!-- Resultats de recherche  -->
+      <br /><br />
+      <div class="columns is-multiline is-centered is-mobile">
+        <div class="column is-8-mobile is-4-tablet is-4-desktop">
+          <img src="./ressources/aptParis.jpg" alt="" />
+          <p class="is-size-3">Lorem ipsum dolor</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="column is-8-mobile is-4-tablet is-4-desktop">
+          <img src="./ressources/aptParis.jpg" alt="" />
+          <p class="is-size-3">Lorem ipsum dolor</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="column is-8-mobile is-4-tablet is-4-desktop">
+          <img src="./ressources/aptParis.jpg" alt="" />
+          <p class="is-size-3">Lorem ipsum dolor</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="column is-8-mobile is-4-tablet is-4-desktop">
+          <img src="./ressources/aptParis.jpg" alt="" />
+          <p class="is-size-3">Lorem ipsum dolor</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="column is-8-mobile is-4-tablet is-4-desktop">
+          <img src="ressources/aptParis.jpg" alt="" />
+          <p class="is-size-3">Lorem ipsum dolor</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="column is-8-mobile is-4-tablet is-4-desktop">
+          <img src="./ressources/aptParis.jpg" alt="" />
+          <p class="is-size-3">Lorem ipsum dolor</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="column is-8-mobile is-4-tablet is-4-desktop">
+          <img src="./ressources/aptParis.jpg" alt="" />
+          <p class="is-size-3">Lorem ipsum dolor</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        
+        <div class="column is-8-mobile is-4-tablet is-4-desktop">
+          <img src="./ressources/aptParis.jpg" alt="" />
+          <p class="is-size-3">Lorem ipsum dolor</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        
+      </div>
+      </div>
+
+      <br><br><br>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="content has-text-centered">
+          Tous DROITS RESERVES &copy;
+        </div>
+      </footer>
+      <script>
+      var btn = document.getElementById("btnNav");
+      var content = document.getElementById("menuContent");
+      btn.addEventListener("click", function () {
+        content.classList.toggle("is-active");
+        btn.classList.toggle("is-active");
+      });
+    </script>
+  </body>
+</html>
