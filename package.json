@@ -1,14 +1,28 @@
 {
   "name": "reservationwebsitewithbulma",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "sass/mystyles.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bulma": "^0.9.4"
-  }
+  },
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitridavinci/ReservationWebSiteWithBulma.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mitridavinci/ReservationWebSiteWithBulma/issues"
+  },
+  "homepage": "https://github.com/mitridavinci/ReservationWebSiteWithBulma#readme",
+  "description": ""
 }
